@@ -1,0 +1,16 @@
+[
+  {
+    "faculty_key": "eph_kirarakan",
+    "specialization_key": "eph_kirarakan_flan",
+    "specialization_name": "Flan",
+    "yesOrNo": "Yes",
+    "subject": "Matem"
+  },
+  {
+    "faculty_key": "eph_kirarakan",
+    "specialization_key": "eph_kirarakan_fstan",
+    "specialization_name": "Fstan",
+    "yesOrNo": "No",
+    "subject": ""
+  }
+]

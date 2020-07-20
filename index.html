@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="selectize.min.css">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col">
+            <h1 class="center">Faculty Checker</h1>
+
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <select id="university" name="university" class="form-control"></select>
+                    </div>
+                    <div class="col">
+                        <select id="faculty" name="faculty" class="form-control"></select>
+                    </div>
+                    <div class="col">
+                        <select id="specialization" name="specialization" class="form-control"></select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="row text-center">
+        <div class="col">
+            <h1>Yes or No</h1>
+            <h2 id="yesOrNo"></h2>
+        </div>
+
+        <div class="col">
+            <h1>Subject</h1>
+            <h2 id="subject"></h2>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="selectize.js"></script>
+
+<script>
+    let baseUrl = '';
+
+    let currentUniversityKey = null;
+    let currentFacultyKey = null;
+    let currentSpecializationKey = null;
+
+    $(document).ready(function() {
+        let universitySelectize = $('#university').selectize({
+            valueField: 'university_key',
+            labelField: 'university_name',
+            searchField: 'university_name',
+            options: [],
+            create: false,
+            render: {
+                option: function(item, escape) {
+                    return '<div>' + escape(item.university_name) + '</div>';
+                }
+            },
+            load: function(query, callback) {
+                if (!query.length) return callback();
+                $.ajax({
+                    url: baseUrl + '/universities.json',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {},
+                    error: function() {
+                        callback();
+                    },
+                    success: function(res) {
+                        callback(res);
+                    }
+                });
+            }
+        });
+        let universitySelectizeControl = universitySelectize[0].selectize;
+        universitySelectizeControl.on('change', function() {
+            currentUniversityKey = universitySelectizeControl.getValue();
+        });
+
+        let facultySelectize = $('#faculty').selectize({
+            valueField: 'faculty_key',
+            labelField: 'faculty_name',
+            searchField: 'faculty_name',
+            options: [],
+            create: false,
+            render: {
+                option: function(item, escape) {
+                    return '<div>' + escape(item.faculty_name) + '</div>';
+                }
+            },
+            load: function(query, callback) {
+                if (!query.length) return callback();
+                $.ajax({
+                    url: baseUrl + '/faculties.json',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {},
+                    error: function() {
+                        callback();
+                    },
+                    success: function(res) {
+                        let filteredRes = [];
+
+                        $.each(res, function( index, option ) {
+                            if (option.university_key === currentUniversityKey) {
+                                filteredRes.push(option);
+                            }
+                        });
+
+                        callback(filteredRes);
+                    }
+                });
+            }
+        });
+        let facultySelectizeControl = facultySelectize[0].selectize;
+        facultySelectizeControl.on('change', function() {
+            currentFacultyKey = facultySelectizeControl.getValue();
+        });
+
+        let specializationSelectize = $('#specialization').selectize({
+            valueField: 'specialization_key',
+            labelField: 'specialization_name',
+            searchField: 'specialization_name',
+            options: [],
+            create: false,
+            render: {
+                option: function(item, escape) {
+                    return '<div>' + escape(item.specialization_name) + '</div>';
+                }
+            },
+            load: function(query, callback) {
+                if (!query.length) return callback();
+                $.ajax({
+                    url: baseUrl + '/specializations.json',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {},
+                    error: function() {
+                        callback();
+                    },
+                    success: function(res) {
+                        let filteredRes = [];
+
+                        $.each(res, function( index, option ) {
+                            if (option.faculty_key === currentFacultyKey) {
+                                filteredRes.push(option);
+                            }
+                        });
+
+                        callback(filteredRes);
+                    }
+                });
+            }
+        });
+        let specializationSelectizeControl = specializationSelectize[0].selectize;
+        specializationSelectizeControl.on('change', function() {
+            currentSpecializationKey = specializationSelectizeControl.getValue();
+
+            $.getJSON( baseUrl + "/specializations.json", function( data ) {
+                $.each(data, function( index, specialization ) {
+                    if (
+                        specialization.faculty_key === currentFacultyKey
+                        && specialization.specialization_key === currentSpecializationKey
+                    ) {
+                        $('#yesOrNo').html(specialization.yesOrNo);
+                        $('#subject').html(specialization.subject);
+                    }
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>

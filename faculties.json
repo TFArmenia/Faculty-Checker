@@ -1,0 +1,22 @@
+[
+  {
+    "university_key": "eph",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"
+  },
+  {
+    "university_key": "eph",
+    "faculty_key": "eph_iravabanakan",
+    "faculty_name": "Իրավաբանական"
+  },
+  {
+    "university_key": "epbh",
+    "faculty_key": "epbh_stom",
+    "faculty_name": "Ատամնաբուժական"
+  },
+  {
+    "university_key": "epbh",
+    "faculty_key": "epbh_degh",
+    "faculty_name": "Դեղագործական"
+  }
+]
