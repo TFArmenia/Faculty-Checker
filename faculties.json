@@ -19,4 +19,78 @@
     "faculty_key": "epbh_degh",
     "faculty_name": "Դեղագործական"
   }
+  {
+    "university_key": "eph",
+    "faculty_key": "gov",
+    "faculty_name": "Կառավարում"  },
+  {
+    "university_key": "eph",
+    "faculty_key": "hay",
+    "faculty_name": "Բանասիրություն"  },
+  {
+    "university_key": "politech",
+    "faculty_key": "tnt",
+    "faculty_name": "տնտեսագիտական"  },
+   {
+    "university_key": "politech",
+    "faculty_key": "transport",
+    "faculty_name": "Տրանսպորտային Համակարգ"  },
+  {
+    "university_key": "epbh",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  {
+    "university_key": "hpth",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  {
+    "university_key": "shirak",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  {
+    "university_key": "haybusak",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  
+  {
+    "university_key": "erebuni",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  {
+    "university_key": "tntes",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  
+  {
+    "university_key": "vanadzor",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  
+  {
+    "university_key": "gyugh",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  
+  {
+    "university_key": "rus",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  
+  {
+    "university_key": "goris",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+
+  {
+    "university_key": "hyusisain",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    {
+    "university_key": "qalashyan",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    {
+    "university_key": "chartar ",
+    "faculty_key": "eph_kirarakan",
+    "faculty_name": "Կիրառական Մաթեմատիկա"  },
 ]
