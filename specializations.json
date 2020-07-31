@@ -113,58 +113,72 @@
   },
    {
     "faculty_key": "bnagit",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "specialization_key": "bnagit_ecology",
+    "specialization_name": "Բնապահպանություն, բնօգտագործում",
+    "yesOrNo": "No",
+    "subject": ""
+  },
+   {
+    "faculty_key": "bjishk",
+    "specialization_key": "bishk_stomatolog",
+    "specialization_name": "Ստոմատոլոգիա",
     "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "subject": "Կենսաբանություն/Քիմիա"
   },
    {
     "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "specialization_key": "bjshkot",
+    "specialization_name": "Բուժքույրական գործի կազմակերպիչ",
     "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "subject": "Կենսաբանություն/Քիմիա"
   },
    {
-    "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
-    "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_gov",
+    "specialization_name": "Կառավարում",
+    "yesOrNo": "No",
+    "subject": ""
   },
    {
-    "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
-    "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_texno",
+    "specialization_name": "Տեխնոլոգիա և ձեռնարկչություն",
+    "yesOrNo": "No",
+    "subject": ""
   },
    {
-    "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
-    "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "faculty_key": "tntesik",
+    "specialization_key": "tntesik_agro",
+    "specialization_name": "Ագրոպարենային համակարգի ֆինանսների կառավարում",
+    "yesOrNo": "No",
+    "subject": ""
   },
    {
-    "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "faculty_key": "psycho",
+    "specialization_key": "psycho_psycho",
+    "specialization_name": "Հոգեբանություն",
     "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "subject": "Ռուսերեն"
   },
    {
-    "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "faculty_key": "mankavarj",
+    "specialization_key": "mankavarj_metod",
+    "specialization_name": "Մանկավարժություն և մեթոդիկա",
     "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "subject": "Դասվար"
   },
    {
-    "faculty_key": "math-it",
-    "specialization_key": "math_it_finance",
-    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "faculty_key": "mankavarjik",
+    "specialization_key": "mankavarjik_metod",
+    "specialization_name": "Մանկավարժություն և մեթոդիկա",
     "yesOrNo": "Yes",
-    "subject": "Մաթեմատիկա"
+    "subject": "Դասվար"
+  },
+   {
+    "faculty_key": "tntesuhi",
+    "specialization_key": "tntesuhi_gov",
+    "specialization_name": "Կառավարում",
+    "yesOrNo": "No",
+    "subject": ""
   }
 ]
