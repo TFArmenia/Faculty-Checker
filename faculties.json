@@ -10,16 +10,6 @@
     "faculty_name": "Իրավաբանական"
   },
   {
-    "university_key": "epbh",
-    "faculty_key": "epbh_stom",
-    "faculty_name": "Ատամնաբուժական"
-  },
-  {
-    "university_key": "epbh",
-    "faculty_key": "epbh_degh",
-    "faculty_name": "Դեղագործական"
-  }
-  {
     "university_key": "eph",
     "faculty_key": "gov",
     "faculty_name": "Կառավարում"  },
@@ -33,64 +23,70 @@
     "faculty_name": "տնտեսագիտական"  },
    {
     "university_key": "politech",
+    "faculty_key": "construct",
+    "faculty_name": "Քաղաքային շինարարություն և տնտեսություն"  },
+   {
+    "university_key": "politech",
     "faculty_key": "transport",
     "faculty_name": "Տրանսպորտային Համակարգ"  },
-  {
-    "university_key": "epbh",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+  
   {
     "university_key": "hpth",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "tntes",
+    "faculty_name": "Տնտեսագիտություն"  },
+  {
+    "university_key": "hpth",
+    "faculty_key": "accounting",
+    "faculty_name": "Հաշվապահություն"  },
+  
+   {
+    "university_key": "hpth",
+    "faculty_key": "math-it",
+    "faculty_name": "Մաթեմատիկա-ՏՏ"  },
+   {
+    "university_key": "hpth",
+    "faculty_key": "securities",
+    "faculty_name": "Արժեթղթերի շուկայի վերլուծություն ու կառավարում"  },
   {
     "university_key": "shirak",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "bnagit",
+    "faculty_name": "Բնագիտական"  },
   {
     "university_key": "haybusak",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "bjishk",
+    "faculty_name": "Բժշկություն"  },
   
   {
     "university_key": "erebuni",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
-  {
-    "university_key": "tntes",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "bjshkot",
+    "faculty_name": "Բժշկական"  },
   
   {
     "university_key": "vanadzor",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "tntes",
+    "faculty_name": "Տնտեսագիտություն"  },
   
   {
     "university_key": "gyugh",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
-  
+    "faculty_key": "tntesik",
+    "faculty_name": "Տնտեսագիտություն"  },
   {
     "university_key": "rus",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "psycho",
+    "faculty_name": "Հոգեբանություն"  },
   
   {
     "university_key": "goris",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "mankavarj",
+    "faculty_name": "Մանկավարժություն"  },
 
   {
     "university_key": "hyusisain",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "mankavarjik",
+    "faculty_name": "Մանկավարժություն"  },
     {
     "university_key": "qalashyan",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
-    {
-    "university_key": "chartar ",
-    "faculty_key": "eph_kirarakan",
-    "faculty_name": "Կիրառական Մաթեմատիկա"  },
+    "faculty_key": "tntesuhi ",
+    "faculty_name": "Տնտեսագիտություն"  },
+   
 ]
