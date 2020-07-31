@@ -7,10 +7,164 @@
     "subject": "Matem"
   },
   {
-    "faculty_key": "eph_kirarakan",
+    "faculty_key": "eph_iravabanakan",
     "specialization_key": "eph_kirarakan_fstan",
     "specialization_name": "Fstan",
     "yesOrNo": "No",
     "subject": ""
+  },
+  {
+    "faculty_key": "gov",
+    "specialization_key": "gov_gov",
+    "specialization_name": "Կառավարում",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+  {
+    "faculty_key": "hay",
+    "specialization_key": "eph_hay_targmanich",
+    "specialization_name": "Թարգմանչական գործ`ռուսերեն-անգլերեն-հայերեն",
+    "yesOrNo": "Yes",
+    "subject": "Ռուսերեն/Անգլերեն"
+  },
+  {
+    "faculty_key": "tnt",
+    "specialization_key": "tnt_entepreneaural_economy",
+    "specialization_name": "ձեռնարկությունների տնտեսագիտություն և կառավարում/ շինարարության ոլորտում",
+    "yesOrNo": "No",
+    "subject": "Մաթեմատիկա"
+  },
+  {
+    "faculty_key": "tnt",
+    "specialization_key": "tnt_transport",
+    "specialization_name": "Տրանսպորտային ուղիների, միջոցների շինարարություն, կառավարում և դրանց շահագործում",
+    "yesOrNo": "No",
+    "subject": ""
+  },
+  {
+    "faculty_key": "construct",
+    "specialization_key": "construct_city_construct",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա/Ֆիզիկա"
+  },
+   {
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_marketing",
+    "specialization_name": "Մարքեթինգ",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_math_models",
+    "specialization_name": "Մաթեմատիկական մեթոդներ և օպեռացիոն անալիզները տնտեսագիտության մեջ",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_hoghaguyk",
+    "specialization_name": "Հողագույքային հարաբերություններ",
+    "yesOrNo": "No",
+    "subject": ""
+  },
+   {
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_anticrisis",
+    "specialization_name": "Հակաճգնաժամային կառավարում",
+    "yesOrNo": "No",
+    "subject": ""
+  },
+   {
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_international_rels",
+    "specialization_name": "Միջազգային տնտեսական հարաբերություններ",
+    "yesOrNo": "No",
+    "subject": ""
+  },
+   {
+    "faculty_key": "tntes",
+    "specialization_key": "tntes_business_gov",
+    "specialization_name": "Բիզնեսի կառավարում",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "accounting",
+    "specialization_key": "accounting_accounting",
+    "specialization_name": "հաշվապահական հաշվառում ու աուդիտ",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "securities",
+    "specialization_key": "securities_all",
+    "specialization_name": "Բոլոր բաժիններ",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "bnagit",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
+  },
+   {
+    "faculty_key": "math-it",
+    "specialization_key": "math_it_finance",
+    "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
+    "yesOrNo": "Yes",
+    "subject": "Մաթեմատիկա"
   }
 ]
