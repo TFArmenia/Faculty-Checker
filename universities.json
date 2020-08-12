@@ -23,7 +23,6 @@
     "university_key": "haybusak",
     "university_name": "Հայբուսակ Համալսարան"
   },
-  
   {
     "university_key": "erebuni",
     "university_name": "Էրեբունի Պետական բժշկական քոլեջ"
@@ -32,36 +31,31 @@
     "university_key": "tntes",
     "university_name": "Ավետիք Մկրտչյանի անվան տնտեսաիրավագիտական համալսարան"
   },
-  
   {
     "university_key": "vanadzor",
     "university_name": "Վանաձորի Պետական Համալսարան"
   },
-  
   {
     "university_key": "gyugh",
     "university_name": "Ագրարային Համալսարան"
   },
-  
   {
     "university_key": "rus",
     "university_name": "Ռուս-հայկական (սլավոնական) համալսարան"
   },
-  
   {
     "university_key": "goris",
     "university_name": "Գորիսի Պետական Համալսարան"
   },
-
   {
     "university_key": "hyusisain",
     "university_name": "Հյուսիսային Համալսարան"
   },
-    {
+  {
     "university_key": "qalashyan",
     "university_name": "Լ․Քալաշյանի անվան հայկական բաց համալսարան"
   },
-    {
+  {
     "university_key": "chartar ",
     "university_name": "Հայաստան Պետական Ճարտարապետաշինարարական համալսարան"
   }

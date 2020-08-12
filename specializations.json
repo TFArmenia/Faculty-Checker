@@ -1,19 +1,5 @@
 [
   {
-    "faculty_key": "eph_kirarakan",
-    "specialization_key": "eph_kirarakan_flan",
-    "specialization_name": "Flan",
-    "yesOrNo": "Yes",
-    "subject": "Matem"
-  },
-  {
-    "faculty_key": "eph_iravabanakan",
-    "specialization_key": "eph_kirarakan_fstan",
-    "specialization_name": "Fstan",
-    "yesOrNo": "No",
-    "subject": ""
-  },
-  {
     "faculty_key": "gov",
     "specialization_key": "gov_gov",
     "specialization_name": "Կառավարում",
@@ -48,133 +34,133 @@
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա/Ֆիզիկա"
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_marketing",
     "specialization_name": "Մարքեթինգ",
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա"
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_math_models",
     "specialization_name": "Մաթեմատիկական մեթոդներ և օպեռացիոն անալիզները տնտեսագիտության մեջ",
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա"
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_hoghaguyk",
     "specialization_name": "Հողագույքային հարաբերություններ",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_anticrisis",
     "specialization_name": "Հակաճգնաժամային կառավարում",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_international_rels",
     "specialization_name": "Միջազգային տնտեսական հարաբերություններ",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_business_gov",
     "specialization_name": "Բիզնեսի կառավարում",
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա"
   },
-   {
+  {
     "faculty_key": "accounting",
     "specialization_key": "accounting_accounting",
     "specialization_name": "հաշվապահական հաշվառում ու աուդիտ",
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա"
   },
-   {
+  {
     "faculty_key": "math-it",
     "specialization_key": "math_it_finance",
     "specialization_name": "Քաղաքային շինարարություն և տնտեսություն",
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա"
   },
-   {
+  {
     "faculty_key": "securities",
     "specialization_key": "securities_all",
     "specialization_name": "Բոլոր բաժիններ",
     "yesOrNo": "Yes",
     "subject": "Մաթեմատիկա"
   },
-   {
+  {
     "faculty_key": "bnagit",
     "specialization_key": "bnagit_ecology",
     "specialization_name": "Բնապահպանություն, բնօգտագործում",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "bjishk",
     "specialization_key": "bishk_stomatolog",
     "specialization_name": "Ստոմատոլոգիա",
     "yesOrNo": "Yes",
     "subject": "Կենսաբանություն/Քիմիա"
   },
-   {
+  {
     "faculty_key": "bjshkot",
     "specialization_key": "bjshkot_bujquyr",
     "specialization_name": "Բուժքույրական գործի կազմակերպիչ",
     "yesOrNo": "Yes",
     "subject": "Կենսաբանություն/Քիմիա"
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_gov",
     "specialization_name": "Կառավարում",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "tntes",
     "specialization_key": "tntes_texno",
     "specialization_name": "Տեխնոլոգիա և ձեռնարկչություն",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "tntesik",
     "specialization_key": "tntesik_agro",
     "specialization_name": "Ագրոպարենային համակարգի ֆինանսների կառավարում",
     "yesOrNo": "No",
     "subject": ""
   },
-   {
+  {
     "faculty_key": "psycho",
     "specialization_key": "psycho_psycho",
     "specialization_name": "Հոգեբանություն",
     "yesOrNo": "Yes",
     "subject": "Ռուսերեն"
   },
-   {
+  {
     "faculty_key": "mankavarj",
     "specialization_key": "mankavarj_metod",
     "specialization_name": "Մանկավարժություն և մեթոդիկա",
     "yesOrNo": "Yes",
     "subject": "Դասվար"
   },
-   {
+  {
     "faculty_key": "mankavarjik",
     "specialization_key": "mankavarjik_metod",
     "specialization_name": "Մանկավարժություն և մեթոդիկա",
     "yesOrNo": "Yes",
     "subject": "Դասվար"
   },
-   {
+  {
     "faculty_key": "tntesuhi",
     "specialization_key": "tntesuhi_gov",
     "specialization_name": "Կառավարում",

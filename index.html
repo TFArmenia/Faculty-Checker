@@ -9,25 +9,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="selectize.min.css">
 
-    <title>Hello, world!</title>
+    <title>Faculty Checker - Teach For Armenia</title>
 </head>
 <body>
 
 <div class="container">
     <div class="row">
+        <div class="col mt-5 mb-5">
+            <img src="tfa_logo.png" height="40" alt="TFA Logo" style="display: block; margin: 0 auto;">
+        </div>
+    </div>
 
+    <div class="row">
         <div class="col">
-            <h1 class="center">Faculty Checker</h1>
-
             <form>
                 <div class="row">
-                    <div class="col">
+                    <div class="col mt-3 mb-3">
+                        <label for="university">Բարձրագույն Ուսումնական Հաստատություն</label>
                         <select id="university" name="university" class="form-control"></select>
                     </div>
-                    <div class="col">
+                </div>
+                <div class="row">
+                    <div class="col col mt-3 mb-3">
+                        <label for="faculty">Ֆակուլտետ / Դեպարտամենտ</label>
                         <select id="faculty" name="faculty" class="form-control"></select>
                     </div>
-                    <div class="col">
+                </div>
+                <div class="row">
+                    <div class="col col mt-3 mb-3">
+                        <label for="specialization">Մասնագիտացում</label>
                         <select id="specialization" name="specialization" class="form-control"></select>
                     </div>
                 </div>
@@ -49,6 +59,19 @@
     </div>
 </div>
 
+<footer class="container-fluid" style="background-color: #0C91FC;">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -57,7 +80,8 @@
 <script src="selectize.js"></script>
 
 <script>
-    let baseUrl = 'https://tfarmenia.github.io/Faculty-Checker';
+    // let baseUrl = 'https://tfarmenia.github.io/Faculty-Checker';
+    let baseUrl = 'http://localhost/freelance/tfa/Faculty-Checker';
 
     let currentUniversityKey = null;
     let currentFacultyKey = null;

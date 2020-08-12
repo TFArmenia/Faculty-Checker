@@ -12,81 +12,91 @@
   {
     "university_key": "eph",
     "faculty_key": "gov",
-    "faculty_name": "Կառավարում"  },
+    "faculty_name": "Կառավարում"
+  },
   {
     "university_key": "eph",
     "faculty_key": "hay",
-    "faculty_name": "Բանասիրություն"  },
+    "faculty_name": "Բանասիրություն"
+  },
   {
     "university_key": "politech",
     "faculty_key": "tnt",
-    "faculty_name": "տնտեսագիտական"  },
-   {
+    "faculty_name": "տնտեսագիտական"
+  },
+  {
     "university_key": "politech",
     "faculty_key": "construct",
-    "faculty_name": "Քաղաքային շինարարություն և տնտեսություն"  },
-   {
+    "faculty_name": "Քաղաքային շինարարություն և տնտեսություն"
+  },
+  {
     "university_key": "politech",
     "faculty_key": "transport",
-    "faculty_name": "Տրանսպորտային Համակարգ"  },
-  
+    "faculty_name": "Տրանսպորտային Համակարգ"
+  },
   {
     "university_key": "hpth",
     "faculty_key": "tntes",
-    "faculty_name": "Տնտեսագիտություն"  },
+    "faculty_name": "Տնտեսագիտություն"
+  },
   {
     "university_key": "hpth",
     "faculty_key": "accounting",
-    "faculty_name": "Հաշվապահություն"  },
-  
-   {
+    "faculty_name": "Հաշվապահություն"
+  },
+  {
     "university_key": "hpth",
     "faculty_key": "math-it",
-    "faculty_name": "Մաթեմատիկա-ՏՏ"  },
-   {
+    "faculty_name": "Մաթեմատիկա-ՏՏ"
+  },
+  {
     "university_key": "hpth",
     "faculty_key": "securities",
-    "faculty_name": "Արժեթղթերի շուկայի վերլուծություն ու կառավարում"  },
+    "faculty_name": "Արժեթղթերի շուկայի վերլուծություն ու կառավարում"
+  },
   {
     "university_key": "shirak",
     "faculty_key": "bnagit",
-    "faculty_name": "Բնագիտական"  },
+    "faculty_name": "Բնագիտական"
+  },
   {
     "university_key": "haybusak",
     "faculty_key": "bjishk",
-    "faculty_name": "Բժշկություն"  },
-  
+    "faculty_name": "Բժշկություն"
+  },
   {
     "university_key": "erebuni",
     "faculty_key": "bjshkot",
-    "faculty_name": "Բժշկական"  },
-  
+    "faculty_name": "Բժշկական"
+  },
   {
     "university_key": "vanadzor",
     "faculty_key": "tntes",
-    "faculty_name": "Տնտեսագիտություն"  },
-  
+    "faculty_name": "Տնտեսագիտություն"
+  },
   {
     "university_key": "gyugh",
     "faculty_key": "tntesik",
-    "faculty_name": "Տնտեսագիտություն"  },
+    "faculty_name": "Տնտեսագիտություն"
+  },
   {
     "university_key": "rus",
     "faculty_key": "psycho",
-    "faculty_name": "Հոգեբանություն"  },
-  
+    "faculty_name": "Հոգեբանություն"
+  },
   {
     "university_key": "goris",
     "faculty_key": "mankavarj",
-    "faculty_name": "Մանկավարժություն"  },
-
+    "faculty_name": "Մանկավարժություն"
+  },
   {
     "university_key": "hyusisain",
     "faculty_key": "mankavarjik",
-    "faculty_name": "Մանկավարժություն"  },
-    {
+    "faculty_name": "Մանկավարժություն"
+  },
+  {
     "university_key": "qalashyan",
     "faculty_key": "tntesuhi ",
-    "faculty_name": "Տնտեսագիտություն"  }
-   
+    "faculty_name": "Տնտեսագիտություն"
+  }
 ]
