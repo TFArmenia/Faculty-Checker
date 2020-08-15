@@ -19,6 +19,13 @@
             <img src="tfa_logo.png" height="40" alt="TFA Logo" style="display: block; margin: 0 auto;">
         </div>
     </div>
+    <div class="row">
+        <div class="col mt-5 mb-5 text-center">
+            <blockquote class="blockquote">
+                <p class="mb-0 font-italic">«Յուրաքանչյուր դիմորդ կարող է դառնալ մասնակից, ով փոփոխություն կսկսի մեր համայնքներում»</p>
+            </blockquote>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col">
@@ -30,13 +37,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col col mt-3 mb-3">
+                    <div class="col mt-3 mb-3">
                         <label for="faculty">Ֆակուլտետ / Դեպարտամենտ</label>
                         <select id="faculty" name="faculty" class="form-control"></select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col col mt-3 mb-3">
+                    <div class="col mt-3 mb-3">
                         <label for="specialization">Մասնագիտացում</label>
                         <select id="specialization" name="specialization" class="form-control"></select>
                     </div>
@@ -46,15 +53,17 @@
 
     </div>
 
-    <div class="row text-center">
+    <div class="row text-center mt-5 mb-5">
         <div class="col">
-            <h1>Yes or No</h1>
-            <h2 id="yesOrNo"></h2>
+            <h1>Համապատասխանություն</h1>
+            <h3 id="yesOrNo" class="font-weight-bold"> -- </h3>
         </div>
+    </div>
 
+    <div class="row text-center mt-5">
         <div class="col">
-            <h1>Subject</h1>
-            <h2 id="subject"></h2>
+            <h1>Առարկա</h1>
+            <h3 id="subject" class="font-weight-bold"> -- </h3>
         </div>
     </div>
 </div>
@@ -88,21 +97,20 @@
     let currentSpecializationKey = null;
 
     $(document).ready(function() {
-        let universitySelectize = $('#university').selectize({
-            valueField: 'university_key',
-            labelField: 'university_name',
-            searchField: 'university_name',
+        let specializationSelectize = $('#specialization').selectize({
+            valueField: 'specialization_key',
+            labelField: 'specialization_name',
+            searchField: 'specialization_name',
             options: [],
             create: false,
             render: {
                 option: function(item, escape) {
-                    return '<div>' + escape(item.university_name) + '</div>';
+                    return '<div>' + escape(item.specialization_name) + '</div>';
                 }
             },
             load: function(query, callback) {
-                if (!query.length) return callback();
                 $.ajax({
-                    url: baseUrl + '/universities.json',
+                    url: baseUrl + '/specializations.json',
                     type: 'GET',
                     dataType: 'json',
                     data: {},
@@ -110,14 +118,35 @@
                         callback();
                     },
                     success: function(res) {
-                        callback(res);
+                        let filteredRes = [];
+
+                        $.each(res, function( index, option ) {
+                            if (option.faculty_key === currentFacultyKey) {
+                                filteredRes.push(option);
+                            }
+                        });
+
+                        callback(filteredRes);
                     }
                 });
             }
         });
-        let universitySelectizeControl = universitySelectize[0].selectize;
-        universitySelectizeControl.on('change', function() {
-            currentUniversityKey = universitySelectizeControl.getValue();
+
+        let specializationSelectizeControl = specializationSelectize[0].selectize;
+        specializationSelectizeControl.on('change', function() {
+            currentSpecializationKey = specializationSelectizeControl.getValue();
+
+            $.getJSON( baseUrl + "/specializations.json", function( data ) {
+                $.each(data, function( index, specialization ) {
+                    if (
+                        specialization.faculty_key === currentFacultyKey
+                        && specialization.specialization_key === currentSpecializationKey
+                    ) {
+                        $('#yesOrNo').html(specialization.yesOrNo);
+                        $('#subject').html(specialization.subject);
+                    }
+                });
+            });
         });
 
         let facultySelectize = $('#faculty').selectize({
@@ -132,7 +161,6 @@
                 }
             },
             load: function(query, callback) {
-                if (!query.length) return callback();
                 $.ajax({
                     url: baseUrl + '/faculties.json',
                     type: 'GET',
@@ -158,23 +186,45 @@
         let facultySelectizeControl = facultySelectize[0].selectize;
         facultySelectizeControl.on('change', function() {
             currentFacultyKey = facultySelectizeControl.getValue();
+            specializationSelectizeControl.onSearchChange('');
+
+            specializationSelectizeControl.clearOptions();
+
+            $.ajax({
+                url: baseUrl + '/specializations.json',
+                type: 'GET',
+                dataType: 'json',
+                data: {},
+                error: function() {
+                    callback();
+                },
+                success: function(res) {
+                    $.each(res, function( index, option ) {
+                        if (option.faculty_key === currentFacultyKey) {
+                            specializationSelectizeControl.addOption(option);
+                        }
+                    });
+                }
+            });
+
+            $('#yesOrNo').html(' -- ');
+            $('#subject').html(' -- ');
         });
 
-        let specializationSelectize = $('#specialization').selectize({
-            valueField: 'specialization_key',
-            labelField: 'specialization_name',
-            searchField: 'specialization_name',
+        let universitySelectize = $('#university').selectize({
+            valueField: 'university_key',
+            labelField: 'university_name',
+            searchField: 'university_name',
             options: [],
             create: false,
             render: {
                 option: function(item, escape) {
-                    return '<div>' + escape(item.specialization_name) + '</div>';
+                    return '<div>' + escape(item.university_name) + '</div>';
                 }
             },
             load: function(query, callback) {
-                if (!query.length) return callback();
                 $.ajax({
-                    url: baseUrl + '/specializations.json',
+                    url: baseUrl + '/universities.json',
                     type: 'GET',
                     dataType: 'json',
                     data: {},
@@ -182,35 +232,40 @@
                         callback();
                     },
                     success: function(res) {
-                        let filteredRes = [];
-
-                        $.each(res, function( index, option ) {
-                            if (option.faculty_key === currentFacultyKey) {
-                                filteredRes.push(option);
-                            }
-                        });
-
-                        callback(filteredRes);
+                        callback(res);
                     }
                 });
             }
         });
-        let specializationSelectizeControl = specializationSelectize[0].selectize;
-        specializationSelectizeControl.on('change', function() {
-            currentSpecializationKey = specializationSelectizeControl.getValue();
+        let universitySelectizeControl = universitySelectize[0].selectize;
+        universitySelectizeControl.on('change', function() {
+            currentUniversityKey = universitySelectizeControl.getValue();
+            facultySelectizeControl.onSearchChange('');
 
-            $.getJSON( baseUrl + "/specializations.json", function( data ) {
-                $.each(data, function( index, specialization ) {
-                    if (
-                        specialization.faculty_key === currentFacultyKey
-                        && specialization.specialization_key === currentSpecializationKey
-                    ) {
-                        $('#yesOrNo').html(specialization.yesOrNo);
-                        $('#subject').html(specialization.subject);
-                    }
-                });
+            facultySelectizeControl.clearOptions();
+            specializationSelectizeControl.clearOptions();
+
+            $.ajax({
+                url: baseUrl + '/faculties.json',
+                type: 'GET',
+                dataType: 'json',
+                data: {},
+                error: function() {
+                    callback();
+                },
+                success: function(res) {
+                    $.each(res, function( index, option ) {
+                        if (option.university_key === currentUniversityKey) {
+                            facultySelectizeControl.addOption(option);
+                        }
+                    });
+                }
             });
+
+            $('#yesOrNo').html(' -- ');
+            $('#subject').html(' -- ');
         });
+        universitySelectizeControl.onSearchChange('');
     });
 </script>
 </body>
